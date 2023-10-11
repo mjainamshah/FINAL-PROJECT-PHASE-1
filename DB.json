@@ -2,15 +2,15 @@
   "PRODUCTS": [
     {
       "id": 1,
-      "title": "CONSTRUCTION HELMETS",
-      "description": "Approximately 25% of all construction-related fatalities are due to head injuries! By wearing construction helmets, workers prioritize their safety & reduce the potential for serious head injuries, ensuring a SAFER working environment on construction sites!",
-      "image": "IMAGES/CONSTRUCTION.jpg"
+      "title": "SLEDGE HAMMER",
+      "description": "A POWERFUL & HEAVY tool used in various applications, primarily for heavy-duty demolition, construction, and industrial tasks.",
+      "image": "IMAGES/HAMMER.jpg"
     },
     {
       "id": 2,
-      "title": "EAR PLUGS",
-      "description": "Ear plugs are generally used in the workplace to help PROTECT the user’s ears from loud noises, intrusion of water, foreign bodies, dust or excessive wind.",
-      "image": "IMAGES/EARPLUG.jpg"
+      "title": "WATER PUMP",
+      "description": "Commonly used in RESIDENTIAL, COMMERCIAL, & AGRICULTURAL settings where water needs to be moved from one place to another.",
+      "image": "IMAGES/WATERPUMP.jpg"
     },
     {
       "id": 3,
@@ -26,9 +26,9 @@
     },
     {
       "id": 5,
-      "title": "PAINT ROLLER",
-      "description": "GOOD QUALITY paint roller to help you make sure your paint job is EVEN & UNIFORM for that smooth & excellent velvety finish we all love!",
-      "image": "IMAGES/PAINTROLLER.jpg"
+      "title": "INSULATING TAPE",
+      "description": "Commonly used for  INSULATING, PROTECTING, & BUNDLING electrical wires and components.",
+      "image": "IMAGES/INSULATING.jpg"
     },
     {
       "id": 6,

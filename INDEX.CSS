@@ -1,4 +1,126 @@
-body { 
+body {
+    width: 80%;
+    margin: auto;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #333;
+  }
+  
+  #container {
+    display: flex;
+    gap: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  #all_products {
+    flex: 1;
+  }
+  
+  #all_products #card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #ddd;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+  }
+  
+  #all_products #card img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: contain;
+  }
+  
+  #all_products #card h6 {
+    margin: 10px 0;
+    font-size: 18px;
+    color: #333;
+  }
+  
+  button#deleteButton {
+    background-color: #ff5858;
+    border: none;
+    color: #fff;
+    padding: 8px 16px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  button#deleteButton:hover {
+    background-color: #ff4444;
+  }
+  
+  button#editButton {
+    background-color: #4caf50;
+    border: none;
+    color: #fff;
+    padding: 8px 16px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  button#editButton:hover {
+    background-color: #45a049;
+  }
+  
+  #single_product {
+    flex: 1;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  #single_product img {
+    width: 100%;
+    max-height: 300px;
+    object-fit: contain;
+  }
+  
+  #single_product h5 {
+    font-size: 16px;
+    color: #333;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  
+  input[type="text"] {
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  button[type="submit"] {
+    background-color: #007bff;
+    border: none;
+    color: #fff;
+    padding: 10px 16px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+
+
+
+/* body { 
     width: 70%;
     margin: auto;
     background-color: rgb(190, 190, 237);
@@ -52,7 +174,7 @@ body {
     cursor: pointer;
 }
 
-
+ */
 
 
 
@@ -83,11 +205,8 @@ body {
 
 /* 
 how to achieve the live link for README
-how to make on click pic functionality to work without failure.
 how to rectify CSS overlaping and spacing. 
 how to link boot strap in addition to css
-none of the events are working
-For the delete element do I need to parse the response as JSON since I am not expecting a JSON response from a DELETE request. Can I remove the .then((response) => response.json()) part.
 */
 
 

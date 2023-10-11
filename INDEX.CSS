@@ -1,7 +1,7 @@
 body {
     width: 80%;
     margin: auto;
-    background-color:red;
+    background-color:rgb(206, 0, 0);
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
   }
   
@@ -38,11 +38,11 @@ body {
   
   #all_products #card img {
     width: 100%;
-    max-height: 200px;
+    max-height: 150px;
     object-fit: contain;
   }
   
-  #all_products #card h6 {
+  #all_products#card h6 {
     margin: 10px 0;
     font-size: 18px;
     color: #333;
@@ -65,7 +65,7 @@ body {
     background-color: #4caf50;
     border: none;
     color: #fff;
-    padding: 8px 16px;
+    padding: 8px 4px;
     cursor: pointer;
     transition: background-color 0.2s;
   }
@@ -89,14 +89,15 @@ body {
   }
   
   #single_product h5 {
-    font-size: 16px;
-    color: #333;
+    font-size: 40px;
+    text-align: center;
+    color: red;
   }
   
   form {
     display: flex;
     flex-direction: column;
-    margin-top: 20px;
+    margin-top: 10px;
   }
   
   input[type="text"] {
@@ -107,23 +108,38 @@ body {
   }
   
   button[type="submit"] {
-    background-color: orange;
+    background-color: black;
     border: none;
-    color:black;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    margin-top: 10px;
+    color:white;
     padding: 10px 16px;
     cursor: pointer;
     transition: background-color 0.2s;
-    font-weight: 1000;
+    font-size: 28px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   }
   
   button[type="submit"]:hover {
-    background-color: blue;
-    color: white;
+    background-color: rgb(255, 191, 0);
+    color: black;
     font-weight: bold;
     border: white;
     border: 20px;
   }
 
+  #singleProductTitle {
+    font-size: 30px;
+    margin-bottom: 0%;
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  #singleProductDescription {
+    text-align: center;
+    font-size: 28px;
+  }
 
 
 /* body { 

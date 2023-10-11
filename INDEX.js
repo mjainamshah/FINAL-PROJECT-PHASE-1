@@ -27,8 +27,8 @@ function displaySingleProduct(id)
         const single_product = document.getElementById ("single_product")
         single_product.innerHTML = `<div>
         <img src= "${data.image}"></img>
-        <h6>${data.title}</h6>
-        <p>${data.description}</p>
+        <h6 id="singleProductTitle">${data.title}</h6>
+        <p id="singleProductDescription">${data.description}</p>
         </div>`
     console.log(data)
     })
@@ -57,8 +57,8 @@ addForm.addEventListener("submit", function (event){
     method: "POST",
     body: JSON.stringify ({
         title: title,
+        description: description,
         image: image_url,
-        description: description
     }),
     headers: {
         "content-type": "application/json",
@@ -99,8 +99,8 @@ function update (id) {
     method: "PATCH",
     body: JSON.stringify ({
         title: update_title,
-        image: update_image_url,
-        description: update_description
+        description: update_description,
+        image: update_image_url
     }),
     headers: {
         "content-type": "application/json",

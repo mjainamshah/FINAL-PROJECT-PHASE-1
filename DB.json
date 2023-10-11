@@ -3,19 +3,13 @@
     {
       "id": 1,
       "title": "SLEDGE HAMMER",
-      "description": "A POWERFUL & HEAVY tool used in various applications, primarily for heavy-duty demolition, construction, and industrial tasks.",
+      "description": "A POWERFUL & HEAVY tool used in various applications, primarily for heavy-duty demolition, construction, and industrial tasks!",
       "image": "IMAGES/HAMMER.jpg"
-    },
-    {
-      "id": 2,
-      "title": "WATER PUMP",
-      "description": "Commonly used in RESIDENTIAL, COMMERCIAL, & AGRICULTURAL settings where water needs to be moved from one place to another.",
-      "image": "IMAGES/WATERPUMP.jpg"
     },
     {
       "id": 3,
       "title": "TAPE MEASURE",
-      "description": "An AUTO-LOCKING tape measure, has the mechanism that AUTOMATICALLY locks the tape in place once you have extended it to the desired length.",
+      "description": "An AUTO-LOCKING tape measure, has the mechanism that AUTOMATICALLY locks the tape in place once you have extended it to the desired length!",
       "image": "IMAGES/TAPEMEASURE.jpg"
     },
     {
@@ -27,7 +21,7 @@
     {
       "id": 5,
       "title": "INSULATING TAPE",
-      "description": "Commonly used for  INSULATING, PROTECTING, & BUNDLING electrical wires and components.",
+      "description": "Commonly used for  INSULATING, PROTECTING, & BUNDLING electrical wires and components!",
       "image": "IMAGES/INSULATING.jpg"
     },
     {
@@ -35,6 +29,24 @@
       "title": "HACKSAW FRAME",
       "description": "Designed to be STURDY & DURABLE to handle HEAVY-DUTY cutting tasks on metal & other tough materials!",
       "image": "IMAGES/HACKSAWFRAME.jpg"
+    },
+    {
+      "title": "WATER PUMP",
+      "image": "https://scontent.fnbo9-1.fna.fbcdn.net/v/t39.30808-6/375211723_812930437499261_654616199767531339_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeFHD5-UqVFuh1l4LE5kVeTdgQuhciRXZ5aBC6FyJFdnlrHtCGqngB1RbXLbAZkT6g5lq5MI60pxGYYxTKgpoRuX&_nc_ohc=T2YXw-qC7EoAX-yE-oz&_nc_pt=5&_nc_zt=23&_nc_ht=scontent.fnbo9-1.fna&oh=00_AfBNlWS938aAiXX3HBEYSo-PCf_6aYj5cO1DTF-HSOn7gw&oe=652B7CEB",
+      "description": " Suitable for a range of RESIDENTIAL, INDUSTRIAL, & AGRICULTURAL applications where reliable water pumping is necessary!",
+      "id": 7
+    },
+    {
+      "title": "SANDFLEX BLADES",
+      "image": "https://scontent.fnbo9-1.fna.fbcdn.net/v/t39.30808-6/375218561_813589777433327_1124089186902198098_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=5f2048&_nc_ohc=HcGNsQk59CsAX_DhnzB&_nc_pt=5&_nc_zt=23&_nc_ht=scontent.fnbo9-1.fna&oh=00_AfAFQ-RwGZqHIY52kF6XUJCuMYPgrqvgIO61y91qFUDNGg&oe=652B23D6",
+      "description": "Are you tired of struggling with dull, unreliable hacksaw blades that slow you down on your projects? Look no further! This Hacksaw Blade is engineered to REVOLUTIONIZE your cutting experience",
+      "id": 8
+    },
+    {
+      "title": "CUTTING DISCS",
+      "image": "https://scontent.fnbo9-1.fna.fbcdn.net/v/t39.30808-6/358133625_788611409931164_9136784572833476920_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=5f2048&_nc_ohc=3KOYSb3RAMwAX-OOjgm&_nc_pt=5&_nc_zt=23&_nc_ht=scontent.fnbo9-1.fna&oh=00_AfAfhYGoMVZ_GhyoleAWbeBqX2JRNA1I7KMVAPrN7KGNGg&oe=652C3D38",
+      "description": "Commonly used in various industries & applications which require PRECISE cutting of hard materials, such as BRICK, STONE, MARBLE, TILES, & MASONRY!",
+      "id": 9
     }
   ]
 }

@@ -1,40 +1,40 @@
 {
-    "PRODUCTS" : [
-        {
-            "id": 1,
-            "title" : "CONSTRUCTION HELMETS",
-            "description" : "Approximately 25% of all construction-related fatalities are due to head injuries! By wearing construction helmets, workers prioritize their safety & reduce the potential for serious head injuries, ensuring a SAFER working environment on construction sites!",
-            "image" : "IMAGES/CONSTRUCTION.jpg"
-        },
-        {
-            "id": 2,
-            "title" : "EAR PLUGS",
-            "description" : "Ear plugs are generally used in the workplace to help PROTECT the user’s ears from loud noises, intrusion of water, foreign bodies, dust or excessive wind.",
-            "image" : "IMAGES/EARPLUG.jpg"
-        },
-        {
-            "id": 3,
-            "title" : "TAPE MEASURE",
-            "description" : "An AUTO-LOCKING tape measure, has the mechanism that AUTOMATICALLY locks the tape in place once you have extended it to the desired length.",
-            "image" : "IMAGES/TAPEMEASURE.jpg"
-        },
-        {
-            "id": 4,
-            "title" : "HAND CHISEL",
-            "description" : "Most common used tool for CARRVING & SHAPING hard materials such as Wood, Stone, & Metal!",
-            "image" : "IMAGES/CHISEL.jpg"
-        },
-        {
-            "id": 5,
-            "title" : "PAINT ROLLER",
-            "description" : "GOOD QUALITY paint roller to help you make sure your paint job is EVEN & UNIFORM for that smooth & excellent velvety finish we all love!",
-            "image" : "IMAGES/PAINTROLLER.jpg"
-        },
-        {
-            "id": 6,
-            "title" : "HACKSAW FRAME",
-            "description" : "Designed to be STURDY & DURABLE to handle HEAVY-DUTY cutting tasks on metal & other tough materials!",
-            "image" : "IMAGES/HACKSAWFRAME.jpg"
-        }
-    ]
+  "PRODUCTS": [
+    {
+      "id": 1,
+      "title": "CONSTRUCTION HELMETS",
+      "description": "Approximately 25% of all construction-related fatalities are due to head injuries! By wearing construction helmets, workers prioritize their safety & reduce the potential for serious head injuries, ensuring a SAFER working environment on construction sites!",
+      "image": "IMAGES/CONSTRUCTION.jpg"
+    },
+    {
+      "id": 2,
+      "title": "EAR PLUGS",
+      "description": "Ear plugs are generally used in the workplace to help PROTECT the user’s ears from loud noises, intrusion of water, foreign bodies, dust or excessive wind.",
+      "image": "IMAGES/EARPLUG.jpg"
+    },
+    {
+      "id": 3,
+      "title": "TAPE MEASURE",
+      "description": "An AUTO-LOCKING tape measure, has the mechanism that AUTOMATICALLY locks the tape in place once you have extended it to the desired length.",
+      "image": "IMAGES/TAPEMEASURE.jpg"
+    },
+    {
+      "id": 4,
+      "title": "HAND CHISEL",
+      "description": "Most common used tool for CARRVING & SHAPING hard materials such as Wood, Stone, & Metal!",
+      "image": "IMAGES/CHISEL.jpg"
+    },
+    {
+      "id": 5,
+      "title": "PAINT ROLLER",
+      "description": "GOOD QUALITY paint roller to help you make sure your paint job is EVEN & UNIFORM for that smooth & excellent velvety finish we all love!",
+      "image": "IMAGES/PAINTROLLER.jpg"
+    },
+    {
+      "id": 6,
+      "title": "HACKSAW FRAME",
+      "description": "Designed to be STURDY & DURABLE to handle HEAVY-DUTY cutting tasks on metal & other tough materials!",
+      "image": "IMAGES/HACKSAWFRAME.jpg"
+    }
+  ]
 }

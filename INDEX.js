@@ -9,9 +9,9 @@ fetch("http://localhost:3000/PRODUCTS", {
     for(element of data) {            //data.map((element) => "OR CAN USE .MAP METHOD"
         // console.log (element);
         all_products.innerHTML += `<div id="card">
-            <img onclick="displaySingleProducts(${element.id})" src= "${element.image}"
+            <img onclick="displaySingleProduct(${element.id})" src= "${element.image}"
             <h6>${element.title}</h6>
-            <button onclick="deleteProducts(${element.id}" id="deleteButton"> DELETE </button>
+            <button onclick="deleteProducts(${element.id})" id="deleteButton"> DELETE </button>
             <button onclick="edit(${element.id})">Edit</button>
         </div>`
     }
@@ -26,11 +26,11 @@ function displaySingleProduct(id)
     .then((data) => {
         const single_product = document.getElementById ("single_product")
         single_product.innerHTML = `<div>
-        <img src= "${data.image}"
+        <img src= "${data.image}"></img>
         <h6>${data.title}</h6>
         <p>${data.description}</p>
-    </div>`
-    console.log(Data)
+        </div>`
+    console.log(data)
     })
 }
 
@@ -45,10 +45,9 @@ function deleteProducts(id)
     })
 }
 
-
 const addForm = document.getElementById("addForm")
 addForm.addEventListener("submit", function (event){
-    event.preventdefault();
+    event.preventDefault();
 
     const title = document.getElementById("title").value;
     const description = document.getElementById("description").value;
@@ -62,7 +61,7 @@ addForm.addEventListener("submit", function (event){
         description: description
     }),
     headers: {
-        "content-type": "application.json",
+        "content-type": "application/json",
     }
     })
     .then((response) => response.json())
@@ -94,7 +93,7 @@ function update (id) {
 
     const update_title = document.getElementById("update_title").value
     const update_description = document.getElementById("update_description").value
-    const update_image_url = document.getElementById("update_image_URL").value
+    const update_image_url = document.getElementById("update_image_url").value
     
     fetch(`http://localhost:3000/PRODUCTS/${id}`, {
     method: "PATCH",
@@ -104,7 +103,7 @@ function update (id) {
         description: update_description
     }),
     headers: {
-        "content-type": "application.json",
+        "content-type": "application/json",
     }
     })
     .then((response) => response.json())

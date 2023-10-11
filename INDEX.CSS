@@ -1,6 +1,7 @@
 body { 
     width: 70%;
     margin: auto;
+    background-color: rgb(190, 190, 237);
 }
 
 #container {
@@ -19,7 +20,7 @@ body {
 #card { 
     height: 40vh;
     width: 50%;
-    border: 2px solid blue;
+    border: 2px solid white;
 }
 
 #card img{
@@ -85,6 +86,8 @@ how to achieve the live link for README
 how to make on click pic functionality to work without failure.
 how to rectify CSS overlaping and spacing. 
 how to link boot strap in addition to css
+none of the events are working
+For the delete element do I need to parse the response as JSON since I am not expecting a JSON response from a DELETE request. Can I remove the .then((response) => response.json()) part.
 */
 
 

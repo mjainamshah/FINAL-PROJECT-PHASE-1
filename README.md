@@ -18,14 +18,13 @@
     - Download zip in the code section of github to your desired folder
     - Extract the files
     - Open the folder with vs code.
-    - Then run "json-server --watch database.json" to run our server.
+    - Then run "json-server --watch database.json" to run back-end server.
     - The run your index.html by either using the "GO LIVE" extension or by double clicking of the index.html
     - And your application is running.
        
 ## Live link
     Deployed Frontend can be accessed in the following link:
     [PRODUCTS](https://github.com/mjainamshah/FINAL-PROJECT-PHASE-1)   
-
 
 ## Known Bugs
     The application images dissapears in heroku

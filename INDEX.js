@@ -6,12 +6,13 @@ fetch("http://localhost:3000/PRODUCTS", {
     console.log(data)
     const all_products = document.getElementById("all_products")
     
-    for (element of data) {            //data.map((element) => "OR CAN USE .MAP METHOD"
+    for(element of data) {            //data.map((element) => "OR CAN USE .MAP METHOD"
         // console.log (element);
         all_products.innerHTML += `<div id="card">
-            <img onclick="displaySingleProducts(${element.id}) src= "${element.image}"
+            <img onclick="displaySingleProducts(${element.id})" src= "${element.image}"
             <h6>${element.title}</h6>
-            <button onclick="deleteProduct(${element.id}" id="deleteButton"> DELETE </button>
+            <button onclick="deleteProducts(${element.id}" id="deleteButton"> DELETE </button>
+            <button onclick="edit(${element.id})">Edit</button>
         </div>`
     }
 })
@@ -23,24 +24,24 @@ function displaySingleProduct(id)
     })
     .then((response) => response.json())
     .then((data) => {
-        const single_products = document.getElementById ("single_products")
-        single_products.innerHTML = `<div>
+        const single_product = document.getElementById ("single_product")
+        single_product.innerHTML = `<div>
         <img src= "${data.image}"
         <h6>${data.title}</h6>
         <p>${data.description}</p>
     </div>`
-    // console.log(Data)
+    console.log(Data)
     })
 }
 
-function deleteProduct(id)
+function deleteProducts(id)
 { 
     fetch(`http://localhost:3000/PRODUCTS/${id}`, {
     method:"DELETE"
     })
     .then((response)=> response.json())
     .then((data) => {
-        alert = "PRODUCT DELETED SUCCESSFULLY!"
+        alert("PRODUCT DELETED SUCCESSFULLY!")
     })
 }
 
@@ -51,9 +52,9 @@ addForm.addEventListener("submit", function (event){
 
     const title = document.getElementById("title").value;
     const description = document.getElementById("description").value;
-    const image_url = document.getElementById("image_URL").value;
+    const image_url = document.getElementById("image_url").value;
 
-    fetch(`http://localhost:3000/PRODUCTS/`, {
+    fetch(`http://localhost:3000/PRODUCTS`, {
     method: "POST",
     body: JSON.stringify ({
         title: title,
@@ -66,9 +67,9 @@ addForm.addEventListener("submit", function (event){
     })
     .then((response) => response.json())
     .then((data) => {
-        alert = ("PRODUCT ADDED SUCCESSFULLY!")
+        alert("PRODUCT ADDED SUCCESSFULLY!")
     })
-    // console.log (title, " ", description, " ", image_url )
+    console.log (title, " ", description, " ", image_url )
 })
 
 function edit(id){
@@ -108,7 +109,9 @@ function update (id) {
     })
     .then((response) => response.json())
     .then((data) => {
-        alert = "PRODUCT UPDATED SUCCESFULLY!"
+        alert("PRODUCT UPDATED SUCCESFULLY!")
     })
-    // console.log (title, " ", description, " ", image_url )
+    // console.log (update_title)
 }
+
+

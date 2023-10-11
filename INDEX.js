@@ -78,12 +78,12 @@ function edit(id){
         console.log(res);
         const updateContainer = document.getElementById("updateContainer")
         updateContainer.innerHTML=`
-        <h6>Update Form</h6>
+        <h2>Update Form:</h2>
         <div>
             <input type="text" id="update_title" value="${res.title}" placeholder="Enter Title">
             <input type="text" id="update_description" value="${res.description}" placeholder="Enter description">
             <input type="text" id="update_image_url" value="${res.image}" placeholder="Enter image url">
-            <button onclick="update(${id})" type="submit">Update</button>
+            <button onclick="update(${id})" type="submit">UPDATE</button>
         </div>`
     })
 

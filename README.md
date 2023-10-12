@@ -26,6 +26,12 @@
     Deployed Frontend can be accessed in the following link:
     [PRODUCTS](https://github.com/mjainamshah/FINAL-PROJECT-PHASE-1)   
 
+## Features
+    - A user can create new products
+    - A user can edit existing products
+    - A user can see all products available.
+    - A user can learn about individual products in the Catalogue
+
 ## Known Bugs
     The application images dissapears in heroku
     Otherwise application works perfectly well, no bugs.

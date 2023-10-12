@@ -8,7 +8,17 @@ body {
   h1 {
     text-align: center;
     color: white;
-    font-size: 90px;
+    font-size: 120px;
+    margin-bottom: 1px;
+  }
+
+  #AboutUs {
+    margin-top: 0px;
+    text-align: center;
+    color: rgb(221, 220, 220);
+    font-family:cursive;
+    font-size: 20px;
+    font-weight: lighter;
   }
   
   #container {
@@ -28,17 +38,18 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 1px solid #ddd;
-    padding: 10px;
-    background-color: black
-    border-radius: 5px;
+    border: 3px solid #ddd;
+    padding: 15px;
+    background-color: black;
+    border-radius: 7px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    margin: 10px;
+    margin: 15px;
+    margin-bottom: 10px;
   }
   
   #all_products #card img {
     width: 100%;
-    max-height: 150px;
+    max-height: 350px;
     object-fit: contain;
   }
   
@@ -67,7 +78,7 @@ body {
     color: #fff;
     padding: 8px 4px;
     cursor: pointer;
-    transition: background-color 0.2s;
+    transition: background-color 0.5s;
   }
   
   button#editButton:hover {
@@ -105,6 +116,8 @@ body {
     margin: 5px 0;
     border: 1px solid #ccc;
     border-radius: 4px;
+    display: flex;
+    flex-direction: column;
   }
   
   button[type="submit"] {
@@ -141,7 +154,13 @@ body {
     font-size: 28px;
   }
 
+  h3 {
+    font-weight: lighter;
+    color: black;
+    letter-spacing: 2px;
+    font-size: 20px;
 
+  }
 /* body { 
     width: 70%;
     margin: auto;
@@ -229,6 +248,9 @@ body {
 how to achieve the live link for README
 how to rectify CSS overlaping and spacing. 
 how to link boot strap in addition to css
+db.json ID number and sequence
+some stylings for the card fixing
+how can I freeze single product card. 
 */
 
 

@@ -1,3 +1,4 @@
+// FETCH A LIST OF PRODUCT FROM THE DATABASE AND DISPLAY IT
 fetch("http://localhost:3000/PRODUCTS", {
     method: "GET"
 })
@@ -18,6 +19,7 @@ fetch("http://localhost:3000/PRODUCTS", {
     }
 })
 
+// DISPLAY A SINGLE PRODUCT'S DETAILS 
 function displaySingleProduct(id)
 { 
     fetch(`http://localhost:3000/PRODUCTS/${id}`, {
@@ -35,6 +37,7 @@ function displaySingleProduct(id)
     })
 }
 
+// DELETE A PRODUCT FROM THE CATALOGUE
 function deleteProducts(id)
 { 
     fetch(`http://localhost:3000/PRODUCTS/${id}`, {
@@ -46,6 +49,7 @@ function deleteProducts(id)
     })
 }
 
+// ADD A NEW PRODUCT TO THE CATALOGUE
 const addForm = document.getElementById("addForm")
 addForm.addEventListener("submit", function (event){
     event.preventDefault();
@@ -72,6 +76,7 @@ update
     console.log (title, " ", description, " ", image_url )
 })
 
+// EDIT A PRODUCT FROM THE CATALOGUE
 function edit(id){
     fetch(`http://localhost:3000/PRODUCTS/${id}`)
     .then((response)=> response.json())
@@ -93,6 +98,7 @@ function edit(id){
 
 }
 
+//UPDATE A PRODUCT IN THE CATALOGUE
 function update (id) {
 
     const update_title = document.getElementById("update_title").value

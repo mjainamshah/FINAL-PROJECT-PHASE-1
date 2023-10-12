@@ -1,13 +1,13 @@
 body {
     width: 85%;
     margin: auto;
-    background-color:rgb(206, 0, 0);
+    background-image: url(https://wallpaperaccess.com/full/1489205.jpg);
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   }
   
   h1 {
     text-align: center;
-    color: white;
+    color:rgb(255, 191, 0);
     font-size: 130px;
     margin-bottom: 1px;
     margin-top: 40px;
@@ -33,21 +33,31 @@ body {
   
   #all_products {
     flex: 1;
+    height: 70vh;
+    overflow: auto;
+    gap: 50;
   }
   
   #all_products #card {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    /* align-items: center; */
     border: 3px solid #ddd;
     padding: 15px;
     background-color: black;
     border-radius: 7px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    margin: 15px;
-    margin-bottom: 10px;
+    margin: 40px 10px;
   }
 
+  #buttonFormating {
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    justify-content: space-between;
+    margin-top: 25px;
+    margin-bottom: 5px ;
+  }
   
   #all_products #card img {
     width: 100%;
@@ -62,29 +72,34 @@ body {
   }
   
   button#deleteButton {
-    background-color: red;
-    border: none;
+    background-color:transparent;
+    border-color: red;
+    border-radius: 8px;
     color: #fff;
     padding: 8px 16px;
     cursor: pointer;
     transition: background-color 0.2s;
+    font-size: 20px;
+    letter-spacing: 1px;
   }
   
   button#deleteButton:hover {
-    background-color: #ff4444;
+    background-color:red;
   }
   
   button#editButton {
-    background-color: #4caf50;
-    border: none;
-    color: #fff;
-    padding: 8px 4px;
+    background-color: white;
+    border: red 20px;
+    border-radius: 8px;
+    font-size: 20px;
+    color: black;
+    padding: 8px 20px;
     cursor: pointer;
     transition: background-color 0.5s;
   }
   
   button#editButton:hover {
-    background-color: #45a049;
+    background-color:rgb(255, 191, 0);
   }
   
   #single_product {
@@ -103,9 +118,15 @@ body {
   }
   
   #single_product h5 {
-    font-size: 40px;
+    font-size: 45px;
     text-align: center;
-    color: red;
+    color: rgb(255, 191, 0);
+    letter-spacing: 2px;
+    text-shadow: 
+    -1px -1px 0 black,  
+    1px -1px 0 black,  
+    -1px 1px 0 black,  
+    1px 1px 0 black;
   }
   
   form {
@@ -122,24 +143,25 @@ body {
     display: flex;
     flex-direction: column;
   }
+
   
   button[type="submit"] {
-    background-color: black;
+    background-color: rgb(255, 191, 0);
     border: none;
     border-radius: 10px;
     margin-bottom: 30px;
     margin-top: 10px;
-    color:white;
+    color:black;
     padding: 10px 16px;
     cursor: pointer;
-    transition: background-color 0.2s;
+    transition: background-color 0.3s;
     font-size: 28px;
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   }
   
   button[type="submit"]:hover {
-    background-color: rgb(255, 191, 0);
-    color: black;
+    background-color: red;
+    color: white;
     font-weight: bold;
     border: white;
     border: 20px;
@@ -157,13 +179,15 @@ body {
     text-align: center;
     font-size: 28px;
     margin-top: 2px;
+    color: black;
   }
 
   h3 {
     font-weight: lighter;
-    color: black;
+    color:rgb(255, 191, 0);
     letter-spacing: 2px;
     font-size: 20px;
+    margin-bottom: 8px;
   }
 
 
@@ -197,14 +221,6 @@ body {
 
 
 
-/* 
-how to achieve the live link for README
-how to rectify CSS overlaping and spacing. 
-how to link boot strap in addition to css
-db.json ID number and sequence
-some stylings for the card fixing
-how can I freeze single product card. 
-DB.JSON ORDERING AND SKIPPING OF ID NUMBERS (3)
-*/
+
 
 

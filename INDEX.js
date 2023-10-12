@@ -9,10 +9,11 @@ fetch("http://localhost:3000/PRODUCTS", {
     for(element of data) {            //data.map((element) => "OR CAN USE .MAP METHOD"
         // console.log (element);
         all_products.innerHTML += `<div id="card">
-            <img onclick="displaySingleProduct(${element.id})" src= "${element.image}"
-            <h6>${element.title}</h6>
+            <img onclick="displaySingleProduct(${element.id})" src= "${element.image}"/>
+            <div id="buttonFormating">
             <button onclick="deleteProducts(${element.id})" id="deleteButton"> DELETE </button>
-            <button onclick="edit(${element.id})">Edit</button>
+            <button onclick="edit(${element.id})" id="editButton">EDIT</button>
+            </div>
         </div>`
     }
 })
@@ -52,7 +53,7 @@ addForm.addEventListener("submit", function (event){
     const title = document.getElementById("title").value;
     const description = document.getElementById("description").value;
     const image_url = document.getElementById("image_url").value;
-
+update
     fetch(`http://localhost:3000/PRODUCTS`, {
     method: "POST",
     body: JSON.stringify ({
@@ -78,7 +79,7 @@ function edit(id){
         console.log(res);
         const updateContainer = document.getElementById("updateContainer")
         updateContainer.innerHTML=`
-        <h2>Update item:</h2>
+        <h2 class="text-white">Update item below:</h2>
         <div>
             <h3> Title: </h3>
             <input type="text" id="update_title" value="${res.title}" placeholder="Enter Title">

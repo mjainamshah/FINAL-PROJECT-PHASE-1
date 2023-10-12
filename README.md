@@ -10,16 +10,17 @@
     - Integrate JavaScript and JSON/API
     - Debug any issues
     - Build and iterate on a project MVP
+    - Learn how to integrate Bootstrap
 
 ## Project Description
     A simple product catalogue!
 
 ## Setup/Installation Requirements
-    - Download zip in the code section of github to your desired folder
+    - Download zip in the code section of github to your desired folder on your device
     - Extract the files
     - Open the folder with vs code.
     - Then run "json-server --watch database.json" to run back-end server.
-    - The run your index.html by either using the "GO LIVE" extension or by double clicking of the index.html
+    - The run your index.html by either using the "GO LIVE" extension or simply by double clicking of the index.html
     - And your application is running.
        
 ## Live link
@@ -33,8 +34,7 @@
     - A user can learn about individual products in the Catalogue
 
 ## Known Bugs
-    The application images dissapears in heroku
-    Otherwise application works perfectly well, no bugs.
+    All  applications fabricated are working well, no issues.
 
 ## Technologies used
     - JAVASCRIPT

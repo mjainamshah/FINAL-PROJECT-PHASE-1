@@ -25,7 +25,10 @@
        
 ## Live link
     Deployed Frontend can be accessed in the following link:
-    [PRODUCTS](https://github.com/mjainamshah/FINAL-PROJECT-PHASE-1)   
+    [PRODUCTS](https://mjainamshah.github.io/FINAL-PROJECT-PHASE-1/)
+    
+    Deployed Backend can be accessed in the following link:
+    [PRODUCTS](https://product-catalogue-phase-1.onrender.com/PRODUCTS))
 
 ## Features
     - A user can create new products

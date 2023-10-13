@@ -1,5 +1,5 @@
 // FETCH A LIST OF PRODUCT FROM THE DATABASE AND DISPLAY IT
-fetch("http://localhost:3000/PRODUCTS", {
+fetch("https://product-catalogue-phase-1.onrender.com/PRODUCTS", {
     method: "GET"
 })
 .then((response) => response.json())
@@ -22,7 +22,7 @@ fetch("http://localhost:3000/PRODUCTS", {
 // DISPLAY A SINGLE PRODUCT'S DETAILS 
 function displaySingleProduct(id)
 { 
-    fetch(`http://localhost:3000/PRODUCTS/${id}`, {
+    fetch(`https://product-catalogue-phase-1.onrender.com/PRODUCTS/${id}`, {
     method: "GET"
     })
     .then((response) => response.json())
@@ -40,7 +40,7 @@ function displaySingleProduct(id)
 // DELETE A PRODUCT FROM THE CATALOGUE
 function deleteProducts(id)
 { 
-    fetch(`http://localhost:3000/PRODUCTS/${id}`, {
+    fetch(`https://product-catalogue-phase-1.onrender.com/PRODUCTS/${id}`, {
     method:"DELETE"
     })
     .then((response)=> response.json())
@@ -58,7 +58,7 @@ addForm.addEventListener("submit", function (event){
     const description = document.getElementById("description").value;
     const image_url = document.getElementById("image_url").value;
 update
-    fetch(`http://localhost:3000/PRODUCTS`, {
+    fetch(`https://product-catalogue-phase-1.onrender.com/PRODUCTS`, {
     method: "POST",
     body: JSON.stringify ({
         title: title,
@@ -78,7 +78,7 @@ update
 
 // EDIT A PRODUCT FROM THE CATALOGUE
 function edit(id){
-    fetch(`http://localhost:3000/PRODUCTS/${id}`)
+    fetch(`https://product-catalogue-phase-1.onrender.com/PRODUCTS/${id}`)
     .then((response)=> response.json())
     .then((res)=> {
         console.log(res);
@@ -105,7 +105,7 @@ function update (id) {
     const update_description = document.getElementById("update_description").value
     const update_image_url = document.getElementById("update_image_url").value
     
-    fetch(`http://localhost:3000/PRODUCTS/${id}`, {
+    fetch(`https://product-catalogue-phase-1.onrender.com/PRODUCTS/${id}`, {
     method: "PATCH",
     body: JSON.stringify ({
         title: update_title,

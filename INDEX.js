@@ -1,5 +1,5 @@
 // FETCH A LIST OF PRODUCT FROM THE DATABASE AND DISPLAY IT
-fetch("https://product-catalogue-0pt9.onrender.com/PRODUCTS", {
+fetch("http://localhost:3000/PRODUCTS", {
     method: "GET"
 })
 .then((response) => response.json())
@@ -22,7 +22,7 @@ fetch("https://product-catalogue-0pt9.onrender.com/PRODUCTS", {
 // DISPLAY A SINGLE PRODUCT'S DETAILS 
 function displaySingleProduct(id)
 { 
-    fetch(`https://product-catalogue-0pt9.onrender.com/PRODUCTS/${id}`, {
+    fetch(`http://localhost:3000/PRODUCTS/${id}`, {
     method: "GET"
     })
     .then((response) => response.json())
@@ -40,7 +40,7 @@ function displaySingleProduct(id)
 // DELETE A PRODUCT FROM THE CATALOGUE
 function deleteProducts(id)
 { 
-    fetch(`https://product-catalogue-0pt9.onrender.com/PRODUCTS/${id}`, {
+    fetch(`http://localhost:3000/PRODUCTS/${id}`, {
     method:"DELETE"
     })
     .then((response)=> response.json())
@@ -58,7 +58,7 @@ addForm.addEventListener("submit", function (event){
     const description = document.getElementById("description").value;
     const image_url = document.getElementById("image_url").value;
 update
-    fetch(`https://product-catalogue-0pt9.onrender.com/PRODUCTS`, {
+    fetch(`http://localhost:3000/PRODUCTS`, {
     method: "POST",
     body: JSON.stringify ({
         title: title,
@@ -78,7 +78,7 @@ update
 
 // EDIT A PRODUCT FROM THE CATALOGUE
 function edit(id){
-    fetch(`https://product-catalogue-0pt9.onrender.com/PRODUCTS/${id}`)
+    fetch(`http://localhost:3000/PRODUCTS/${id}`)
     .then((response)=> response.json())
     .then((res)=> {
         console.log(res);
@@ -105,7 +105,7 @@ function update (id) {
     const update_description = document.getElementById("update_description").value
     const update_image_url = document.getElementById("update_image_url").value
     
-    fetch(`https://product-catalogue-0pt9.onrender.com/PRODUCTS/${id}`, {
+    fetch(`http://localhost:3000/PRODUCTS/${id}`, {
     method: "PATCH",
     body: JSON.stringify ({
         title: update_title,
@@ -124,3 +124,4 @@ function update (id) {
 }
 
 
+//https://product-catalogue-0pt9.onrender.com
